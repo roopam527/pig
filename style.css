@@ -1,0 +1,182 @@
+body {
+  background: #ad5389;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3c1053, #ad5389);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background-image: linear-gradient(to right, #3c1053, #ad5389);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-attachment: fixed;
+  font-family: Lato,"sans-sarif";
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+.game-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 90vh;
+  background-color: #fff;
+  margin: 0 !important;
+  width: 75vw;
+}
+
+@media (max-width: 900px) {
+  .game-box {
+    width: 100vw;
+  }
+}
+
+.player-name {
+  font-weight: 100;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.player-score {
+  font-weight: 100;
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  color: #EB4D4D;
+}
+
+.current {
+  width: 7rem;
+  background-color: #EB4D4D;
+  text-transform: uppercase;
+}
+
+.current .current-score {
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.btn-active {
+  background-color: #EB4D4D;
+  height: 0.8rem;
+  width: 0.8rem;
+  border-radius: 50%;
+  visibility: hidden;
+}
+
+.active {
+  background-color: #EAEAEA;
+}
+
+.active .btn-active {
+  visibility: visible;
+}
+
+.active .player-name {
+  font-weight: 500;
+}
+
+.btn-new, .btn-hold, .btn-roll {
+  position: absolute;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 0;
+  font-size: 1.5rem;
+  transition: all .2s;
+}
+
+.btn-new:focus, .btn-hold:focus, .btn-roll:focus {
+  outline: none;
+}
+
+.btn-new:hover, .btn-hold:hover, .btn-roll:hover {
+  letter-spacing: 0.3rem;
+}
+
+.btn-new > *, .btn-hold > *, .btn-roll > * {
+  position: absolute;
+  color: #EB4D4D;
+  font-size: 2rem;
+  display: inline-block;
+  left: -2rem;
+  top: -0.4rem;
+}
+
+.btn-new {
+  top: 7%;
+  left: 50%;
+  transform: translate(-50%, -7%);
+}
+
+.btn-hold {
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+}
+
+@media (max-width: 900px) {
+  .btn-hold {
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+  }
+}
+
+.btn-roll {
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+}
+
+@media (max-width: 900px) {
+  .btn-roll {
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+  }
+}
+
+.dice {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  width: 7rem;
+}
+
+@media (max-width: 420px) {
+  .dice {
+    width: 25%;
+  }
+}
+
+.dice2 {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -58%);
+  width: 7rem;
+}
+
+@media (max-width: 420px) {
+  .dice2 {
+    width: 25%;
+  }
+}
+
+.winner {
+  background-image: linear-gradient(to bottom right, #ad5389, #3c1053);
+  color: #f7f7f7;
+}
+
+.input {
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -95%);
+  background-color: rgba(247, 247, 247, 0.3);
+}
+
+.display-invisible {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */

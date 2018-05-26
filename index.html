@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css">
+    <title>Pig Game</title>
+</head>
+
+<body>
+    <main class=" game-box shadow">
+        <div class="container-fluid h-100">
+            <div class="row h-100 ">
+                <div class="col-6 player-0-box  active">
+                    <div class="row h-50 d-flex pt-5">
+                        <div class="col-12 text-center align-self-center">
+                            <div class="name-box-0 d-flex justify-content-center ">
+                                <h1 class="player-name order-2 order-md-1" id=
+                                "name-0">Player 1</h1>
+                                <div class="btn-active align-self-md-center mt-3 order-1 order-md-2 mt-md-0 ml-md-3"></div>
+                            </div>
+                            <h1 class="player-score" id="score-0">43</h1>
+                        </div>
+                    </div>
+                    <div class="row h-50 ">
+                        <div class="col-12 d-flex justify-content-center ">
+                            <div class="current  text-center shadow align-self-center">
+                                <p class=" mt-2">Current</p>
+                                <h1 class="current-score mt-0 text-light" id="current-0">11</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 player-1-box ">
+                    <div class="row h-50 d-flex pt-5">
+                        <div class="col-12 text-center align-self-center ">
+                            <div class="name-box-1 d-flex justify-content-center  ">
+                                    <h1 class="player-name order-2 order-md-1" id="name-1">Player 2</h1>
+                                    <div class="btn-active align-self-md-center mt-3 order-1 order-md-2 mt-md-0 ml-md-3"></div> </div>
+                            <h1 class="player-score" id="score-1">72</h1>
+                        </div>
+                    </div>
+                    <div class="row h-50 ">
+                        <div class="col-12 d-flex justify-content-center">
+                            <div class="current text-center shadow align-self-center">
+                                <p class=" mt-2">Current</p>
+                                <h1 class="current-score mt-0 text-light" id="current-1">11</h1>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
+                <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
+                <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
+                
+                <img src="dice-5.png" alt="Dice" class="dice shadow">
+                <img src="dice-4.png" alt="Dice" class="dice2 shadow">
+                <form action="">
+                    <input type="number" class="input position-absolute text-center" value="99" required>
+                </form>
+            </div>
+          
+        </div>
+        
+    </main>
+
+</body>
+<script src="app.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+
+</html>
